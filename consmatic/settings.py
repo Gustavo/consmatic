@@ -141,10 +141,11 @@ INSTALLED_APPS = (
     'enciclopedia',   
     'projeto_cineo_acerto',
     'djrichtextfield',
-    #'ACERTO',
     'ibge',
     )
-#INSTALLED_APPS += 'djrichtextfield'
+
+
+
 DJRICHTEXTFIELD_CONFIG = {
     'js': ['//tinymce.cachefly.net/4.1/tinymce.min.js'],
     'init_template': 'djrichtextfield/init/tinymce.js',
@@ -154,7 +155,7 @@ DJRICHTEXTFIELD_CONFIG = {
         'toolbar': 'bold italic | link image | removeformat',
         'width': 700
     }
-}
+
 #constance config
 #CONSTANCE_CONFIG = {
 #    'MY_SETTINGS_KEY': (42, 'the answer to everything'),
