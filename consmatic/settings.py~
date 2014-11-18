@@ -57,12 +57,12 @@ USE_L10N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"                                                                                                                                                                                                                            
-MEDIA_ROOT = '/home/marcus/Documentos/workspace-sts-2.9.1.RELEASE/consmatic/_docs_site/'
+MEDIA_ROOT = '/home/recons/webapps/intranet/consmatic/media'
              
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = '/media/'
+MEDIA_URL = ''
 
 STATIC_ROOT = ''
 
@@ -70,9 +70,7 @@ STATIC_URL = '/static/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = ('/home/recons/webapps/intranet/consmatic/_docs_site/_docs_site/conteudo'
-	              #'/home/marcus/Dropbox/',
-                      '/home/marcusdodung/Area de Trabalho/')
+ADMIN_MEDIA_PREFIX = ()
                     #,'/static/admin/')  
         # Incluir a trilha?
         
@@ -145,7 +143,16 @@ INSTALLED_APPS = (
     #'ACERTO',
     'ibge',
     )
-
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//tinymce.cachefly.net/4.1/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': False,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat',
+        'width': 700
+    }
+}
 #constance config
 #CONSTANCE_CONFIG = {
 #    'MY_SETTINGS_KEY': (42, 'the answer to everything'),

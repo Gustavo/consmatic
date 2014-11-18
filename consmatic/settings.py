@@ -143,6 +143,7 @@ INSTALLED_APPS = (
     #'ACERTO',
     'ibge',
     )
+INSTALLED_APPS += 'djrichtextfield'
 DJRICHTEXTFIELD_CONFIG = {
     'js': ['//tinymce.cachefly.net/4.1/tinymce.min.js'],
     'init_template': 'djrichtextfield/init/tinymce.js',
