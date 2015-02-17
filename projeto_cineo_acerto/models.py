@@ -220,7 +220,7 @@ class Entrada(models.Model):
      #paginas = models.IntegerField()
      #models= CharField.max(length_250=conteudo,blank= 'True', null='True') 
      
-     conteudo=     content = RichTextField()#models.TextField(blank= 'True', null='True') 
+     conteudo=   RichTextField()#models.TextField(blank= 'True', null='True') 
 #    data_criacao = models.DateTimeField('DataData Inicial do Verbete:')
 #    autor = models.CharField(max_length=400) 
      #def __unicode__(self):
